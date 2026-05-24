@@ -2658,14 +2658,14 @@ const SCORE_CFG = {
   periodo: 'Abril 2026',
   evolucao: '+50',
   dims: [
-    {nome:'Liquidez', val:0, prev:0, peso:'25%', descr:'Capacidade de honrar compromissos de curto prazo'}
-    {nome:'Inadimplência', val:86, prev:86, peso:'25%', descr:'Controle de recebimentos e exposição a calotes'}
-    {nome:'Margem', val:0, prev:0, peso:'20%', descr:'Eficiência operacional e rentabilidade'}
-    {nome:'Fluxo de Caixa', val:100, prev:100, peso:'20%', descr:'Previsibilidade e saúde do fluxo financeiro'}
+    {nome:'Liquidez', val:0, prev:0, peso:'25%', descr:'Capacidade de honrar compromissos de curto prazo'},
+    {nome:'Inadimplência', val:86, prev:86, peso:'25%', descr:'Controle de recebimentos e exposição a calotes'},
+    {nome:'Margem', val:0, prev:0, peso:'20%', descr:'Eficiência operacional e rentabilidade'},
+    {nome:'Fluxo de Caixa', val:100, prev:100, peso:'20%', descr:'Previsibilidade e saúde do fluxo financeiro'},
     {nome:'Organização', val:80, prev:80, peso:'10%', descr:'Qualidade e pontualidade das informações entregues'}
   ],
   historico: [
-    {mes:'Jan', val:0, status:'alerta'}
+    {mes:'Jan', val:0, status:'alerta'},
     {mes:'Abr', val:50, status:'alerta', atual:true}
   ]
 };
@@ -2748,10 +2748,10 @@ function buildScore(){
 
 
 const presSlides=[
-  {label:Visão Geral,title:{EMPRESA},sub:Fechamento — {mes_label},kpis:[{{v:{fmt(dm["entradas"])},l:Fat. {MESES_AB[mes_atual]}}},{{v:{fmt(dm["saidas"])},l:Desp. {MESES_AB[mes_atual]}}},{{v:{perc_meta_a}%,l:Meta Anual}},{{v:{margem_real}%,l:Margem}}]}},
-  {label:Acumulado 2026,title:Resultado Acumulado,sub:Jan a {MESES_PT[mes_atual]} 2026,kpis:[{{v:{fmt(acum_ent)},l:Fat. Total}},{{v:{fmt(acum_sai)},l:Desp. Total}},{{v:{fmt(acum_res)},l:Resultado}},{{v:{mes_atual} meses,l:Período}}]}},
-  {label:Metas,title:Progresso das Metas,sub:Execução vs Planejado 2026,kpis:[{{v:{perc_meta_a}%,l:Meta Anual Fat.}},{{v:{margem_real}%,l:Margem Atual}},{{v:{META_MARGEM}%,l:Meta Margem}},{{v:{fmt(META_ANUAL)},l:Meta Anual}}]}},
-  {label:Próximos Passos,title:Estratégia {prox_m_label} 2026,sub:Recomendações Chanquini,kpis:[{{v:05/{min(mes_hoje+1,12):02d},l:Entrega Docs}},{{v:{entrega},l:Fechamento}},{{v:{fmt(META_MES)},l:Meta Mensal}},{{v:{META_MARGEM}%,l:Margem Meta}}]}},
+  {label:'Visão Geral',title:'Sinergis Consultoria',sub:'Fechamento — Novembro 2026',kpis:[{v:'R$ 58.494,96',l:'Fat. Nov'},{v:'R$ 163.905,54',l:'Desp. Nov'},{v:'365.7%',l:'Meta Anual'},{v:'-180.2%',l:'Margem'}]},
+  {label:'Acumulado 2026',title:'Resultado Acumulado',sub:'Jan a Novembro 2026',kpis:[{v:'R$ 4.388.425,42',l:'Fat. Total'},{v:'R$ 5.844.233,80',l:'Desp. Total'},{v:'R$ -1.455.808,38',l:'Resultado'},{v:'11 meses',l:'Período'}]},
+  {label:'Metas',title:'Progresso das Metas',sub:'Execução vs Planejado 2026',kpis:[{v:'365.7%',l:'Meta Anual Fat.'},{v:'-180.2%',l:'Margem Atual'},{v:'65.0%',l:'Meta Margem'},{v:'R$ 1.200.000,00',l:'Meta Anual'}]},
+  {label:'Próximos Passos',title:'Estratégia Dezembro 2026',sub:'Recomendações Chanquini',kpis:[{v:'05/12',l:'Entrega Docs'},{v:'05/11/2026',l:'Fechamento'},{v:'R$ 100.000,00',l:'Meta Mensal'},{v:'65.0%',l:'Margem Meta'}]},
 ];
 let presIdx=0;
 
