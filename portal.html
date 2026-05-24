@@ -1938,9 +1938,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
       </div>
 
       <div class="mg" style="margin-top:14px;display:none">
-        <div class="mc2"><div class="mc2-l">Meta Faturamento Mensal</div><div class="mc2-v" style="color:var(--yellow)">270.9%</div><div class="mc2-s">R$ 270.891,21 de R$ 100.000,00</div><div class="pl-trk"><div class="pl-fill" style="width:84%;background:linear-gradient(90deg,var(--yellow),var(--gold2))"width:100%"width:100%"></div></div></div>
-        <div class="mc2"><div class="mc2-l">Meta Faturamento Anual</div><div class="mc2-v" style="color:var(--q2)">136.5%</div><div class="mc2-s">R$ 1.637.849,53 de R$ 1.200.000,00</div><div class="pl-trk"><div class="pl-fill" style="width:31.4%;background:linear-gradient(90deg,var(--qdark),var(--q))"width:100%"width:100%"></div></div></div>
-        <div class="mc2"><div class="mc2-l">Margem Líquida</div><div class="mc2-v" style="color:var(--green)">-194.3%</div><div class="mc2-s">-126.3% atual · meta 65.0%</div><div class="pl-trk"><div class="pl-fill" style="width:94%;background:linear-gradient(90deg,var(--green),#4ADE80)"width:-194.3%"width:-194.3%"></div></div></div>
+        <div class="mc2"><div class="mc2-l">Meta Faturamento Mensal</div><div class="mc2-v" style="color:var(--yellow)">270.9%</div><div class="mc2-s">R$ 270.891,21 de R$ 100.000,00</div><div class="pl-trk"><div class="pl-fill" style="width:84%;background:linear-gradient(90deg,var(--yellow),var(--gold2))"width:100%"></div></div></div>
+        <div class="mc2"><div class="mc2-l">Meta Faturamento Anual</div><div class="mc2-v" style="color:var(--q2)">136.5%</div><div class="mc2-s">R$ 1.637.849,53 de R$ 1.200.000,00</div><div class="pl-trk"><div class="pl-fill" style="width:31.4%;background:linear-gradient(90deg,var(--qdark),var(--q))"width:100%"></div></div></div>
+        <div class="mc2"><div class="mc2-l">Margem Líquida</div><div class="mc2-v" style="color:var(--green)">-194.3%</div><div class="mc2-s">-126.3% atual · meta 65.0%</div><div class="pl-trk"><div class="pl-fill" style="width:94%;background:linear-gradient(90deg,var(--green),#4ADE80)"width:-194.3%"></div></div></div>
         <div class="mc2"><div class="mc2-l">Redução de Custos</div><div class="mc2-v" style="color:var(--blue)">40%</div><div class="mc2-s">2% atual · meta 5%</div><div class="pl-trk"><div class="pl-fill" style="width:40%;background:linear-gradient(90deg,var(--blue),#60A5FA)"></div></div></div>
       </div>
 
@@ -2265,7 +2265,7 @@ const CFG = {
     segmento:"Consultoria e Serviços"
   },
   dashboards:{
-    // "Abril 2026":{url:"https://chanquinioperacional.github.io/sinergis/dashboard_2026_1779635228.html",entrega:"05/05/2026"}
+    "Abril 2026":{url:"https://chanquinioperacional.github.io/sinergis/dashboard_2026_1779634245.html",entrega:"05/05/2026"}
     // "Maio 2026":{url:"LINK",entrega:"05/06/2026"},
   },
   cartas:[
@@ -2747,7 +2747,12 @@ function buildScore(){
 // ══════════════════════════════════════════════════════════════════════
 
 
-const presSlides=[{"label": "Visão Geral", "title": "Sinergis Consultoria e Novos Negócios / Assessoria e Sistemas", "sub": "Fechamento — Abril 2026", "kpis": [{"v": "R$ 270.891,21", "l": "Fat. Abr"}, {"v": "R$ 612.892,47", "l": "Desp. Abr"}, {"v": "136.5%", "l": "Meta Anual"}, {"v": "-126.3%", "l": "Margem"}]}, {"label": "Acumulado 2026", "title": "Resultado Acumulado", "sub": "Jan a Abril 2026", "kpis": [{"v": "R$ 1.637.849,53", "l": "Fat. Total"}, {"v": "R$ 2.196.177,97", "l": "Desp. Total"}, {"v": "R$ -558.328,44", "l": "Resultado"}, {"v": "4 meses", "l": "Período"}]}, {"label": "Metas", "title": "Progresso das Metas", "sub": "Execução vs Planejado 2026", "kpis": [{"v": "136.5%", "l": "Meta Anual Fat."}, {"v": "-126.3%", "l": "Margem Atual"}, {"v": "65.0%", "l": "Meta Margem"}, {"v": "R$ 1.200.000,00", "l": "Meta Anual"}]}, {"label": "Próximos Passos", "title": "Estratégia Maio 2026", "sub": "Recomendações Chanquini", "kpis": [{"v": "05/05", "l": "Entrega Docs"}, {"v": "05/05/2026", "l": "Fechamento"}, {"v": "R$ 100.000,00", "l": "Meta Mensal"}, {"v": "65.0%", "l": "Margem Meta"}]}];
+const presSlides=[
+  {label:'Visão Geral',title:'Sinergis Consultoria',sub:'Fechamento — Novembro 2026',kpis:[{v:'R$ 58.494,96',l:'Fat. Nov'},{v:'R$ 163.905,54',l:'Desp. Nov'},{v:'365.7%',l:'Meta Anual'},{v:'-180.2%',l:'Margem'}]},
+  {label:'Acumulado 2026',title:'Resultado Acumulado',sub:'Jan a Novembro 2026',kpis:[{v:'R$ 4.388.425,42',l:'Fat. Total'},{v:'R$ 5.844.233,80',l:'Desp. Total'},{v:'R$ -1.455.808,38',l:'Resultado'},{v:'11 meses',l:'Período'}]},
+  {label:'Metas',title:'Progresso das Metas',sub:'Execução vs Planejado 2026',kpis:[{v:'365.7%',l:'Meta Anual Fat.'},{v:'-180.2%',l:'Margem Atual'},{v:'65.0%',l:'Meta Margem'},{v:'R$ 1.200.000,00',l:'Meta Anual'}]},
+  {label:'Próximos Passos',title:'Estratégia Dezembro 2026',sub:'Recomendações Chanquini',kpis:[{v:'05/12',l:'Entrega Docs'},{v:'05/11/2026',l:'Fechamento'},{v:'R$ 100.000,00',l:'Meta Mensal'},{v:'65.0%',l:'Margem Meta'}]},
+];
 let presIdx=0;
 
 function openPresentation(){document.getElementById('presentation').classList.add('open');presIdx=0;renderSlide();}
